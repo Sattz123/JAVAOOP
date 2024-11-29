@@ -10,7 +10,7 @@ import java.util.Random;
 public class LinearSearch {
     public static void main(String[] args){
 
-        //1.initialize vector with 10 random value type integer
+        //initialize vector with 10 random value type integer
         Random rand = new Random();
 
         Vector<Integer> myVector = new Vector<Integer>();
@@ -56,5 +56,5 @@ public class LinearSearch {
             System.out.print("["+v.elementAt(i));
             System.out.print("] ");
         }
-    }
+    }//end display method
 }  //end class linearsearch
