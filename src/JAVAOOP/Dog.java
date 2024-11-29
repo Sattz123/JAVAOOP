@@ -2,8 +2,8 @@ package JAVAOOP;
 
 public class Dog{
 
-    static float weight;
-    static String color;
+    public static float weight;
+    public static String color;
 
     public Dog (String col, float wei){
         color = col;
