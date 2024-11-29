@@ -1,5 +1,20 @@
 package JAVAOOP;
+
 public class Dog{
-    private double weigth;
-    private String color;
+
+    static float weight;
+    static String color;
+
+    public Dog (String col, float wei){
+        color = col;
+        weight = wei;
+    }
+    
+    public String getColor(){
+        return color;
+    }
+
+    public float getWeight(){
+        return weight;
+    }
 }
