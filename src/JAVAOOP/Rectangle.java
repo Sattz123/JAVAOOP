@@ -12,7 +12,7 @@ public class Rectangle {
     public float Area(){
         return width * height;
     }
-
+    
     public float Perimeter(){
         return 2 * (width+height);
     }
