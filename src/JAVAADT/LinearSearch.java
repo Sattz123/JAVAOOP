@@ -14,6 +14,8 @@ public class LinearSearch {
         //initialize vector with 10 random value type integer
         Random rand = new Random();
 
+        System.out.println("Hello World!");
+
         Vector<Integer> myVector = new Vector<Integer>();
 
         for(int i=0; i<10; i++){
