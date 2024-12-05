@@ -2,8 +2,8 @@ package JAVAOOP;
 
 public class Stock {
     //Declare data fields
-    private static String symbol;
-    private static String name;
+    private  String symbol;
+    private  String name;
     private static double previousClosingPrice;
     private static double currentPrice;
 
