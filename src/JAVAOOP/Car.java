@@ -6,9 +6,9 @@ public class Car {
     private int milage;
 
     public Car(String col){
-        color = col;
-        speed = 0;
-        milage = 0;
+        this.color = col;
+        this.speed = 0;
+        this.milage = 0;
     }
     public String getColor(){return color;}
     public int getSpeed(){return speed;}

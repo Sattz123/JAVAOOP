@@ -5,6 +5,7 @@ package JAVAADT;
  * sattaporn_kowarakun@cmu.ac.th
  * 672115046
  */
+
 import java.util.Vector;
 import java.util.Random;
 
@@ -54,7 +55,7 @@ public class LinearSearch {
 
     //display the vector's element
     public static void display(Vector<Integer> v){
-        System.out.println("Here are the values: ");
+        System.out.println("Here are the random numbers: ");
         for(int i=0; i<v.size(); i++){
             System.out.print("["+v.elementAt(i));
             System.out.print("] ");
