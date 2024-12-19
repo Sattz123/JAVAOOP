@@ -1,0 +1,37 @@
+@startuml
+
+class Shape {
+    - color: String
+    - filled: boolean
+    + Shape()
+    + Shape(color: String, filled: boolean)
+    + getColor(): String
+    + setColor(color: String): void
+    + isFilled(): boolean
+    + setFilled(filled: boolean): void
+    + toString(): String
+}
+
+class Circle {
+    - radius: double
+    + Circle()
+    + Circle(radius: double)
+    + Circle(radius: double, color: String, filled: boolean)
+    + getArea(): double
+    + getPerimeter(): double
+}
+
+class Rectangle {
+    - width: double
+    - length: double
+    + Rectangle()
+    + Rectangle(width: double, length: double)
+    + Rectangle(width: double, length: double, color: String, filled: boolean)
+    + getArea(): double
+    + getPerimeter(): double
+}
+
+Shape <|-- Circle
+Shape <|-- Rectangle
+
+@enduml
