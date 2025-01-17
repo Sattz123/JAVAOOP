@@ -25,16 +25,16 @@ class Student {
         return firstName;
     }
 
-    public String toString() {
-        return this.SID + " " + this.firstName + " " + this.lastName;
-    }
+    // public String toString() {
+    //     return this.SID + " " + this.firstName + " " + this.lastName;
+    // }
 }//End student class
 
 
 public class Data {
     public static void main(String[] args) throws FileNotFoundException {
         //Input file
-        File f = new File("953102_701000-2.csv"); //Your file's path
+        File f = new File("C://Users//Stewie//Documents//ADT Programming Assignment 1//Programming Assignment 1//src//class_roaster67.csv"); //Your file's path
         Scanner in = new Scanner(f);
 
         //Skip the unnecessary first 7 line
