@@ -1,0 +1,31 @@
+@startuml
+
+class Publication {
+    - String publisher
+    - int numberOfPages
+    - double price
+    - String title
+    + Publication(String, int, double, String)
+    + void print()
+}
+
+class Magazine {
+    - String publicationUnit
+    + Magazine(String, int, double, String, String)
+    + void print()
+}
+
+class Book {
+    - String author
+    + Book(String, int, double, String, String)
+    + void print()
+}
+
+class TestPublication {
+    + main(String[] args)
+}
+
+Publication <|-- Magazine
+Publication <|-- Book
+
+@enduml
