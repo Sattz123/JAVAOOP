@@ -50,6 +50,21 @@ class Book extends Publication {
     }
 }
 
+class KidsMagazine extends Publication{
+    private int ageRange;
+
+    public KidsMagazine(String publisher, int numberOfPages, double price, String title,int ageRange){
+        super(publisher, numberOfPages, price, title);
+        this.ageRange = ageRange;
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("This KidsMagazine's recommand age range is: "+ ageRange);
+    }
+}
+
 public class TestPublication {
     public static void main(String[] args) {
         ArrayList<Publication> publications = new ArrayList<>();

@@ -62,8 +62,10 @@ public class TestAccount {
         acc.withdraw(2500);
         acc.deposit(3000);
 
+        System.out.println("Account ID: " + acc.getId());
         System.out.println("Balance: " + acc.getBalance());
         System.out.println("Monthly Interest: " + acc.getMonthlyInterest());
         System.out.println("Account Created On: " + acc.getDateCreated());
+        System.out.println("Total Balance: "+ (acc.getBalance()+acc.getMonthlyInterest()));
     }
 }

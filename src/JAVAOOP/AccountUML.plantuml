@@ -1,0 +1,32 @@
+@startuml
+class Account {
+    - int id
+    - double balance
+    - double annualInterestRate
+    - Date dateCreated
+
+    + Account()
+    + Account(int id, double balance)
+
+    + int getId()
+    + void setId(int id)
+
+    + double getBalance()
+    + void setBalance(double balance)
+
+    + double getAnnualInterestRate()
+    + void setAnnualInterestRate(double annualInterestRate)
+
+    + Date getDateCreated()
+    + double getMonthlyInterestRate()
+    + double getMonthlyInterest()
+    + void withdraw(double amount)
+    + void deposit(double amount)
+}
+
+class TestAccount {
+    + static void main(String[] args)
+}
+
+TestAccount --> Account : uses
+@enduml
