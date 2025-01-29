@@ -1,0 +1,36 @@
+@startuml
+
+abstract class GeometricObject {
+    - String color = "white"
+    - boolean filled
+    - Date dateCreated
+    + GeometricObject()
+    + GeometricObject(String color, boolean filled)
+    + String getColor()
+    + void setColor(String color)
+    + boolean isFilled()
+    + void setFilled(boolean filled)
+    + Date getDateCreated()
+    + String toString()
+    + abstract double getArea()
+    + abstract double getPerimeter()
+}
+
+class Triangle {
+    - double side1
+    - double side2
+    - double side3
+    + Triangle()
+    + Triangle(double side1, double side2, double side3)
+    + Triangle(double side1, double side2, double side3, String color, boolean filled)
+    + double getSide1()
+    + double getSide2()
+    + double getSide3()
+    + double getArea()
+    + double getPerimeter()
+    + String toString()
+}
+
+GeometricObject <|-- Triangle
+
+@enduml
