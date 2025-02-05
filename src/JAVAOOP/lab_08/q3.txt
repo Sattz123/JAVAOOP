@@ -1,0 +1,9 @@
+snippet1: Student with ID 123: Alice
+snippet2: Student with ID 789 does not exist
+
+[2]: Dictionary is an abstract class, while Map is an interface with multiple implementations.
+    Map offers various types (HashMap, TreeMap), whereas Dictionary is outdated.
+    Hashtable (a Dictionary subclass) is synchronized, while HashMap is not but allows optional synchronization.
+
+[3]: Map is the better choice because it provides multiple implementations, better performance, 
+    and is the industry standard. Dictionary is outdated and should be avoided in modern Java applications.

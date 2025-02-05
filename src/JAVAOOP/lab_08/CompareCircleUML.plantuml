@@ -1,0 +1,26 @@
+@startuml
+
+class Circle {
+    - double radius
+    + Circle(double radius)
+    + double getRadius()
+    + void setRadius(double radius)
+}
+
+interface Comparable {
+    + int compareTo(Object o)
+}
+
+class ComparableCircle extends Circle {
+    + ComparableCircle(double radius)
+    + int compareTo(ComparableCircle o)
+}
+
+ComparableCircle ..|> Circle
+ComparableCircle ..|> Comparable
+
+class TestComparableCircle {
+    + main(String[] args)
+}
+
+@enduml
