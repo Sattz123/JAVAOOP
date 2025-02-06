@@ -1,0 +1,39 @@
+@startuml
+abstract class GeometricObject {
+    - String color
+    - boolean filled
+    - java.util.Date dateCreated
+    # GeometricObject()
+    # GeometricObject(String, boolean)
+    + String getColor()
+    + void setColor(String)
+    + boolean isFilled()
+    + void setFilled(boolean)
+    + java.util.Date getDateCreated()
+    + String toString()
+    + abstract double getArea()
+    + abstract double getPerimeter()
+}
+
+interface Colorable {
+    + void howToColor()
+}
+
+class Square extends GeometricObject implements Colorable {
+    - double side
+    + Square()
+    + Square(double)
+    + double getSide()
+    + void setSide(double)
+    + double getArea()
+    + double getPerimeter()
+    + void howToColor()
+}
+
+class TestInterfaceLab_2 {
+    + main(String[])
+}
+
+GeometricObject <|-- Square
+Square ..|> Colorable
+@enduml
