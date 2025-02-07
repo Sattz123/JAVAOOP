@@ -45,6 +45,6 @@ public class MainCovidVac {
 
         //Show remaining applicants
         System.out.println("\nApplicants after deleting all:");
-        list.traversal();
+        System.out.println(list.getSize());
     }
 }
